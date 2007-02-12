@@ -1,6 +1,6 @@
-# $Revision: 1.6 $Date: 2006-12-21 08:46:57 $
+# $Revision: 1.7 $Date: 2007-02-12 00:49:01 $
 Summary:	PostgreSQL grafical frontend for KDE
-Summary(pl):	Graficzny frontend do PostgreSQL-a dla KDE 
+Summary(pl.UTF-8):   Graficzny frontend do PostgreSQL-a dla KDE 
 Name:		kpogre
 Version:	1.5.2
 Release:	1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KPoGre is grafical client for PostgreSQL Database for KDE. It uses
 libpqxx library.
 
-%description -l pl
-KPoGre jest graficznym klientem bazy PostgreSQL dla KDE. U¿ywa
+%description -l pl.UTF-8
+KPoGre jest graficznym klientem bazy PostgreSQL dla KDE. UÅ¼ywa
 biblioteki libpqxx.
 
 %prep
