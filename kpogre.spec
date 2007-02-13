@@ -1,6 +1,6 @@
-# $Revision: 1.7 $Date: 2007-02-12 00:49:01 $
+# $Revision: 1.8 $Date: 2007-02-13 06:46:49 $
 Summary:	PostgreSQL grafical frontend for KDE
-Summary(pl.UTF-8):   Graficzny frontend do PostgreSQL-a dla KDE 
+Summary(pl.UTF-8):	Graficzny frontend do PostgreSQL-a dla KDE 
 Name:		kpogre
 Version:	1.5.2
 Release:	1
