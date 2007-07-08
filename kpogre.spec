@@ -1,4 +1,4 @@
-# $Revision: 1.8 $Date: 2007-02-13 06:46:49 $
+# $Revision: 1.9 $Date: 2007-07-08 10:02:30 $
 Summary:	PostgreSQL grafical frontend for KDE
 Summary(pl.UTF-8):	Graficzny frontend do PostgreSQL-a dla KDE 
 Name:		kpogre
@@ -8,7 +8,7 @@ License:	GPL v2
 Group:		Applications/Databases/Interfaces
 Source0:	http://dl.sourceforge.net/kpogre/%{name}-%{version}.tar.gz
 # Source0-md5:	a5fe7384608e7322ecf19593357f0608
-URL:		http://kpogre.sourceforge.net
+URL:		http://kpogre.sourceforge.net/
 BuildRequires:	kdelibs-devel
 BuildRequires:	libpqxx-devel
 BuildRequires:	pkgconfig
@@ -35,7 +35,7 @@ biblioteki libpqxx.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_desktopdir}
+install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 echo 'Categories=Qt;KDE;Office;Database;' >> kpogre/kpogre.desktop
 
 %{__make} install \
@@ -43,7 +43,7 @@ echo 'Categories=Qt;KDE;Office;Database;' >> kpogre/kpogre.desktop
 	kde_htmldir=%{_kdedocdir}
 
 mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/Applications/kpogre.desktop \
-	$RPM_BUILD_ROOT%{_desktopdir}/kpogre.desktop
+	$RPM_BUILD_ROOT%{_desktopdir}/kde/kpogre.desktop
 
 %find_lang %{name} --with-kde
 
@@ -55,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/kpogre
-%{_desktopdir}/kpogre.desktop
+%{_desktopdir}/kde/kpogre.desktop
 %{_iconsdir}/hicolor/*/*/kpogre.png
