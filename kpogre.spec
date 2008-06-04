@@ -1,16 +1,16 @@
-# $Revision: 1.12 $Date: 2008-05-18 16:19:26 $
+# $Revision: 1.13 $Date: 2008-06-04 15:25:45 $
 Summary:	PostgreSQL grafical frontend for KDE
 Summary(pl.UTF-8):	Graficzny frontend do PostgreSQL-a dla KDE 
 Name:		kpogre
-Version:	1.5.8
+Version:	1.6.6
 Release:	1
 License:	GPL v2
 Group:		Applications/Databases/Interfaces
 Source0:	http://dl.sourceforge.net/kpogre/%{name}-%{version}.tar.gz
-# Source0-md5:	683e6f3b84342ea5ace6262e5ff832d1
-Patch0:		%{name}-missing-include.patch
+# Source0-md5:	0e728643dd6ed93a5744fbc50a808c7f
 URL:		http://kpogre.sourceforge.net/
 BuildRequires:	kdelibs-devel
+BuildRequires:	kdelibs-shared
 BuildRequires:	libpqxx-devel
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.129
@@ -26,7 +26,6 @@ biblioteki libpqxx.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure \
@@ -59,3 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/apps/kpogre
 %{_desktopdir}/kde/kpogre.desktop
 %{_iconsdir}/hicolor/*/*/kpogre.png
+%{_iconsdir}/crystalsvg/*/*/kpogre.*
