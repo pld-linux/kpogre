@@ -1,4 +1,3 @@
-# $Revision: 1.14 $Date: 2008-06-04 19:55:28 $
 Summary:	PostgreSQL grafical frontend for KDE
 Summary(pl.UTF-8):	Graficzny frontend do PostgreSQL-a dla KDE 
 Name:		kpogre
